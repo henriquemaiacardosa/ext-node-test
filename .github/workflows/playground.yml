@@ -8,5 +8,5 @@ jobs:
   runs_on: ubunto-latest
 
   steps: 
-    -name: Executa echo
-    run: echo "Hello World!"
+    -name: Executing test
+    run: echo hello world!
