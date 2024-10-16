@@ -1,0 +1,12 @@
+name: Testanto github actions 
+
+on: [push, pull_resquest]
+
+jobs:
+  linux_job:
+
+  runs_on: ubunto-latest
+
+  steps: 
+    -name: Executa echo
+    run: echo "Hello World!"
