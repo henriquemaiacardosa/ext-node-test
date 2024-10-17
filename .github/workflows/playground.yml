@@ -20,3 +20,16 @@ jobs:
     steps:
       - name: Lista dir
         run: dir
+      - name: Falha
+        run: exit(1)
+
+  final_job:
+
+        runs-on: ubunto-latest 
+
+        needs: [windows_job, linux_job]
+
+        steps:
+          - name: Final job
+            run: echo Encerrado
+
